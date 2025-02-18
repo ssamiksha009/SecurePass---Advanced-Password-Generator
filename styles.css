@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    transition: background 0.3s ease-in-out;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 18px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Strength Meter */
+.strength-meter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#strengthBar {
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+    background: lightgray;
+    margin-left: 10px;
+}
+
+/* Settings */
+.settings {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #333;
+}
+
+/* Password History */
+#historyList {
+    list-style: none;
+    padding: 0;
+}
+
+#historyList li {
+    background: #eee;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-history {
+    background: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copy-history:hover {
+    background: #0056b3;
+}

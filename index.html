@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator 🔒</h2>
+        <div class="input-group">
+            <input type="text" id="password" readonly>
+            <button id="copyBtn">📋 Copy</button>
+        </div>
+
+        <div class="strength-meter">
+            <span id="strengthText">Strength: </span>
+            <div id="strengthBar"></div>
+        </div>
+
+        <div class="settings">
+            <label>Password Length: <span id="lengthValue">12</span></label>
+            <input type="range" id="lengthSlider" min="6" max="20" value="12">
+
+            <label><input type="checkbox" id="uppercase" checked> Include Uppercase</label>
+            <label><input type="checkbox" id="lowercase" checked> Include Lowercase</label>
+            <label><input type="checkbox" id="numbers" checked> Include Numbers</label>
+            <label><input type="checkbox" id="symbols" checked> Include Symbols</label>
+            <label><input type="checkbox" id="avoidAmbiguous"> Avoid Ambiguous Characters</label>
+        </div>
+
+        <button id="generateBtn">🔄 Generate Password</button>
+        <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+
+        <h3>Password History 📜</h3>
+        <ul id="historyList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
